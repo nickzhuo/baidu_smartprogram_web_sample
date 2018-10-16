@@ -1,2 +1,5 @@
 FROM nginx:alpine
-COPY nginx.conf /etc/nginx/nginx.conf
+
+LABEL maintainer="nICKZHUO <nickzhuo@zhouzhou.net>"
+
+COPY ./baidu.conf /etc/nginx/conf.d/baidu.conf
